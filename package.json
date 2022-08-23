@@ -1,0 +1,44 @@
+{
+  "name": "jsaqa_3",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage"
+  },
+  "jest":{
+      "collectCoverageFrom": [
+        "**/*.{js,jsx}",
+        "!**/node_modules/**",
+        "!**/coverage/**"
+      ],
+      "coverageReporters": ["html"],
+      "coverageThreshold": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+  }
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "author": "omelnikova",
+  "license": "ISC",
+  "devDependencies": {
+    "i": "^0.3.7",
+    "jest": "^27.5.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AVKretov/js-hw3.1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AVKretov/js-hw3.1/issues"
+  },
+  "homepage": "https://github.com/AVKretov/js-hw3.1#readme"
+}
